@@ -1,7 +1,7 @@
 # I2C-Communnication-between-multiple-Arduinos
 This repo contains my code and simulation results to the I2C communication between 1 master arduino and two slave arduinos.
 
-All the codes of the arduinos are written in Arduino software.
+All the codes of the arduinos are written in Arduino IDE.
 
 The simulaiton was done in a free online simulator TinkerCad.
 
@@ -14,5 +14,7 @@ Step 2: The Master Arduino, will be continously receiving the numbers being sent
 Step 3: The Slave 2 will be continioulsy receiving the numbers being sent by Master Arduino, and will blink the led's and display the nubmers on the led as descirbed below:
 
 0: Glow Blue Led
+
 1: Glow Red Led
+
 2: Glow both Led's
