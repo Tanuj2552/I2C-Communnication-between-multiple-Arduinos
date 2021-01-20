@@ -1,4 +1,6 @@
 # I2C-Communnication-between-multiple-Arduinos
+It contains a zip folder of power point presentation of basics of Arduino and Arduino IDE
+
 This repo contains my code and simulation results to the I2C communication between 1 master arduino and two slave arduinos.
 
 All the codes of the arduinos are written in Arduino IDE.
