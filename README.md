@@ -20,3 +20,7 @@ Step 3: The Slave 2 will be continioulsy receiving the numbers being sent by Mas
 1: Glow Red Led
 
 2: Glow both Led's
+
+The simulations are done in a free online simulator called tinkercad
+
+https://www.tinkercad.com/dashboard
