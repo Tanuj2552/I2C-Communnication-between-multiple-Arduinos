@@ -1,0 +1,32 @@
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+}
+
+int pin_no = 0;
+void loop()
+{
+  
+  if(Serial.available() > 0){
+    pin_no = Serial.read();
+    Serial.print("Number received is: ");
+    Serial.println(pin_no - 48);
+    blink_it(pin_no - 48);
+  }
+  else{
+    Serial.println("Not received!!");
+  }
+  delay(1000);
+  
+}
+
+void blink_it(int pin_no){
+    //Serial.print("IN the func: ");
+    //Serial.println(pin_no);
+  digitalWrite(pin_no, HIGH);
+    delay(1000);
+    digitalWrite(pin_no, LOW);
+}

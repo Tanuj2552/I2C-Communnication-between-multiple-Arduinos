@@ -1,0 +1,40 @@
+void setup()
+{
+  Serial.begin(9600);
+}
+
+int pin = 7;
+
+void loop()
+{
+  pinMode(pin, OUTPUT);
+  digitalWrite(pin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(pin, HIGH);
+  delayMicroseconds(5);
+  digitalWrite(pin, LOW);
+  
+  pinMode(pin, INPUT);
+  
+  long duration_micro = pulseIn(pin, HIGH);
+  
+  double distance = distance_calculation(duration_micro);
+  
+  Serial.print("The distance of the object is: ");
+  Serial.print(distance);
+  Serial.println("m");
+  
+  if(distance < 1){Serial.println("STOP!!");}
+  else if(distance < 2){Serial.println("Slow Down!!");}
+  else{Serial.println("Free to go...");}
+  
+  delay(1000);
+  
+}
+
+double distance_calculation(long duration_micro){
+  // distance = ((((time in micro)/(10^6))*(343)/2));
+  // distance = (time in micro)
+  double dist = (duration_micro*0.000172);
+  return dist;
+}

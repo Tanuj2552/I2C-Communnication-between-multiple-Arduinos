@@ -1,0 +1,17 @@
+int pin = 5;
+void setup()
+{
+  pinMode(pin, OUTPUT); // setting pin 5 as output
+}
+
+void loop()
+{
+  digitalWrite(pin, HIGH); // Setting the output of pin 5 to high
+  
+  delay(2000); // Wait for 2000 millisecond(s) 
+  
+  digitalWrite(pin, LOW); // Setting the output of pin 5 to low
+  
+  delay(2000); // Wait for 2000 millisecond(s)
+
+}
