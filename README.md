@@ -1,4 +1,7 @@
 # I2C-Communnication-between-multiple-Arduinos
+
+If you want a basic understanding of Arduino, you can refer to our clubs youtube channel - https://www.youtube.com/user/RIGNITC
+
 It contains a zip folder of power point presentation of basics of Arduino and Arduino IDE
 
 This repo contains basics of Arduino PPT and some basic codes and simulations in tinkercad
